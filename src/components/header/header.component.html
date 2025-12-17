@@ -5,7 +5,7 @@
     <a href="#home" (click)="scrollTo($event, '#home')" class="text-2xl font-bold text-teal-800 tracking-wider"> <img src="/logoPirncipal.png" alt="Logo" class="w-48 h-auto"> </a>
     
     <!-- Group nav and button for desktop to ensure they stick together on the right -->
-    <div class="hidden md:flex items-center">
+    <div class="hidden lg:flex items-center">
         <nav class="flex items-center space-x-8">
           @for (link of navLinks; track link.href) {
             <a 
@@ -23,7 +23,7 @@
         </a>
     </div>
 
-    <button (click)="toggleMenu()" class="md:hidden text-slate-700 focus:outline-none">
+    <button (click)="toggleMenu()" class="lg:hidden text-slate-700 focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
       </svg>
@@ -31,7 +31,7 @@
   </div>
 
   @if (menuOpen()) {
-    <div class="md:hidden bg-white shadow-lg ">
+    <div class="lg:hidden bg-white shadow-lg ">
       <nav class="flex flex-col items-center py-4 space-y-4">
         @for (link of navLinks; track link.href) {
           <a [href]="link.href" (click)="scrollTo($event, link.href)" class="text-slate-600 hover:text-teal-700 transition-colors duration-300 font-medium">{{ link.label }}</a>
