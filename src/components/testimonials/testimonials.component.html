@@ -1,0 +1,20 @@
+
+<section id="depoimentos" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Confiança que se constrói, resultado que se vê.</h2>
+      <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Veja o que nossos clientes dizem sobre a nossa parceria.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (testimonial of testimonials; track testimonial.author) {
+        <div class="bg-stone-50 p-8 rounded-lg border border-stone-200 flex flex-col">
+          <p class="text-slate-600 text-lg italic mb-6 flex-grow">“{{ testimonial.quote }}”</p>
+          <div>
+            <p class="font-bold text-slate-800">{{ testimonial.author }}</p>
+            <p class="text-sm text-teal-700 font-medium">{{ testimonial.caseType }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

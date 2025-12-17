@@ -1,0 +1,18 @@
+
+<section id="areas" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Áreas de Atuação</h2>
+      <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Nossa expertise ao seu serviço, com foco em soluções estratégicas e personalizadas.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      @for (area of areas; track area.title) {
+        <div class="bg-stone-50 p-8 rounded-lg border border-stone-200 hover:shadow-xl hover:-translate-y-2 hover:border-teal-700 transition-all duration-300">
+          <div class="text-teal-600 mb-4" [innerHTML]="area.icon"></div>
+          <h3 class="text-xl font-semibold text-slate-800 mb-2">{{ area.title }}</h3>
+          <p class="text-slate-600">{{ area.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
