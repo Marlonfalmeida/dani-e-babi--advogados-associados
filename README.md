@@ -1,20 +1,63 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ⚖️ Dani e Babi - Advocacia e Consultoria Jurídica
 
-# Run and deploy your AI Studio app
+Bem-vindo ao repositório da Landing Page oficial do escritório **Dani e Babi Advogadas**. Este projeto foi desenvolvido para oferecer uma presença digital profissional, moderna e acessível, destacando as áreas de atuação e facilitando o contato com novos clientes.
 
-This contains everything you need to run your app locally.
+## 🚀 Sobre o Projeto
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+Uma Landing Page de alta conversão, totalmente responsiva e otimizada para SEO. O objetivo é apresentar o escritório, transmitir credibilidade e converter visitantes em agendamentos de consulta.
 
-## Run Locally
+### ✨ Funcionalidades Principais
 
-**Prerequisites:**  Node.js
+- **Design Premium & Responsivo**: Layout moderno que se adapta a qualquer dispositivo (Mobile, Tablet, Desktop).
+- **Áreas de Atuação**: Seção detalhada com ícones personalizados para cada especialidade (Família, Imobiliário, Sucessões, etc.).
+- **Depoimentos**: Prova social para aumentar a confiança dos visitantes.
+- **Chamada para Ação (CTA)**: Botões estratégicos e atraentes com efeitos visuais modernos.
+- **Performance**: Desenvolvido com as melhores práticas para carregamento rápido.
 
+## 🛠️ Tecnologias Utilizadas
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Este projeto foi construído com as tecnologias mais modernas do ecossistema web:
+
+- **[Angular](https://angular.io/)**: Framework robusto utilizando a nova arquitetura de **Standalone Components**.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilitários para estilização rápida, responsiva e consistente.
+- **TypeScript**: Tipagem estática para maior segurança e manutenibilidade do código.
+
+## 📦 Como Rodar Localmente
+
+Siga os passos abaixo para executar o projeto em sua máquina:
+
+1.  **Clone o repositório** (ou baixe os arquivos):
+
+    ```bash
+    git clone https://github.com/seu-usuario/landing-page-juridica.git
+    cd landing-page-juridica
+    ```
+
+2.  **Instale as dependências**:
+    Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+
+    ```bash
+    npm install
+    ```
+
+3.  **Execute o servidor de desenvolvimento**:
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Acesse no navegador**:
+    Abra `http://localhost:4200` (ou a porta indicada no terminal).
+
+## 📄 Estrutura de Pastas
+
+- `src/components`: Componentes isolados (Header, Hero, Practice Areas, Footer, etc.).
+- `public/`: Imagens e ícones estáticos (Logos, Favicon).
+
+## 🤝 Créditos
+
+Desenvolvido por **[Marlon Almeida](https://www.marlonfalmeida.com.br)**.
+
+---
+
+&copy; 2025 Dani e Babi – Todos os direitos reservados.
