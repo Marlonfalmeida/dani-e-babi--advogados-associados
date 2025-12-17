@@ -30,16 +30,18 @@
     </button>
   </div>
 
-  @if (menuOpen()) {
-    <div class="lg:hidden bg-white shadow-lg ">
-      <nav class="flex flex-col items-center py-4 space-y-4">
-        @for (link of navLinks; track link.href) {
-          <a [href]="link.href" (click)="scrollTo($event, link.href)" class="text-slate-600 hover:text-teal-700 transition-colors duration-300 font-medium">{{ link.label }}</a>
-        }
-        <a href="#contato" (click)="scrollTo($event, '#contato')" class="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition-all duration-300 shadow-sm">
-          Fale Conosco
-        </a>
-      </nav>
-    </div>
-  }
+  <div class="lg:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out"
+       [class.max-h-0]="!menuOpen()"
+       [class.opacity-0]="!menuOpen()"
+       [class.max-h-96]="menuOpen()"
+       [class.opacity-100]="menuOpen()">
+    <nav class="flex flex-col items-center py-4 space-y-4">
+      @for (link of navLinks; track link.href) {
+        <a [href]="link.href" (click)="scrollTo($event, link.href)" class="text-slate-600 hover:text-teal-700 transition-colors duration-300 font-medium">{{ link.label }}</a>
+      }
+      <a href="#contato" (click)="scrollTo($event, '#contato')" class="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition-all duration-300 shadow-sm">
+        Fale Conosco
+      </a>
+    </nav>
+  </div>
 </header>
